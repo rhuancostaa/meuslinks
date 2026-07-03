@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url("background.png");
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main{
+    width: 100%;
+    max-width: 700px;
+    padding: 35px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #CBD5E1;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.links{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.links a{
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #2563EB;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.links a:hover{
+    background: #3B82F6;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(59,130,246,.4);
+}
+
+.links p{
+    margin: 0;
+}
+
+@media (max-width: 768px){
+
+    main{
+        padding: 30px 25px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+    }
+
+    main{
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: .95rem;
+    }
+
+    .links a{
+        max-width: 100%;
+        padding: 14px;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h2{
+        font-size: .85rem;
+    }
+
+    .links a{
+        font-size: .9rem;
+    }
+
+}
